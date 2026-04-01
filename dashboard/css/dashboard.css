@@ -1,0 +1,119 @@
+:root {
+    --bg: #0f172a;
+    --surface: #111827;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --accent: #6366f1;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, sans-serif;
+    background: radial-gradient(circle at top, #1e293b 0%, #0f172a 100%);
+    color: var(--text);
+}
+
+.dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+h1, h3 {
+    margin: 0;
+}
+
+.status-overview {
+    display: flex;
+    gap: 16px;
+}
+
+.status-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    padding: 18px;
+    border-radius: 16px;
+    min-width: 220px;
+}
+
+.status-card.healthy {
+    border-color: #10b981;
+}
+
+.status-indicator {
+    margin-right: 8px;
+}
+
+.status-text {
+    font-weight: 700;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.metrics {
+    display: grid;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.metric {
+    display: flex;
+    justify-content: space-between;
+    color: var(--muted);
+}
+
+.charts-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.chart-container {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.alerts-section {
+    margin-top: 24px;
+}
+
+.alerts-list {
+    display: grid;
+    gap: 10px;
+}
+
+.alert-item {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 16px;
+    padding: 16px;
+}

@@ -1,0 +1,14 @@
+alerts:
+  email:
+    enabled: false
+    smtp_server: smtp.gmail.com
+    smtp_port: 587
+    username: alerts@example.com
+    password: app-password
+    recipients:
+      - admin@example.com
+      - devops@example.com
+
+  webhook:
+    enabled: true
+    url: https://hooks.slack.com/services/xxx
